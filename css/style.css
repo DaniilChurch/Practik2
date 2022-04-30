@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+}
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-description {
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 14px;
+}
+
+/* News Selection Start*/
+.news-container {
+    margin-top: 100px;
+}
+
+.news-post {
+    width: 800px;
+}
+
+.news-post-autor, .news-post-date {
+    font-size: 14px;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.news-post-date {
+    color: gray;
+}
