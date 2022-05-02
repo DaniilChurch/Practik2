@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3db4d4d6-26eb-4da5-83ce-40913caa4c0b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html_file.html" beforeDir="false" afterPath="$PROJECT_DIR$/html_file.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +72,7 @@
       <workItem from="1651347406260" duration="29000" />
       <workItem from="1651347467625" duration="228000" />
       <workItem from="1651399719543" duration="2012000" />
-      <workItem from="1651431015113" duration="1042000" />
+      <workItem from="1651431015113" duration="1751000" />
     </task>
     <task id="LOCAL-00004" summary="test3">
       <created>1651346275019</created>
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651401543535</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="test4">
+      <created>1651432380634</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651432380634</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +106,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -112,6 +130,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="test2" />
     <MESSAGE value="test3" />
-    <option name="LAST_COMMIT_MESSAGE" value="test3" />
+    <MESSAGE value="test4" />
+    <option name="LAST_COMMIT_MESSAGE" value="test4" />
   </component>
 </project>
