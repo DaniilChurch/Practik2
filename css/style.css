@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Harrington,sans-serif;
+    font-family: Arial, Harrington, sans-serif;
     padding-left: 5px;
 }
 
@@ -23,6 +23,8 @@ body {
 
 .news-post {
     width: 800px;
+    display: block;
+    margin-top: 100px;
 }
 
 .news-post-autor, .news-post-date {
@@ -34,18 +36,21 @@ body {
 .news-post-date {
     color: gray;
 }
-.news-post-title{
+
+.news-post-title {
     border-left: solid 5px;
     color: black;
     padding-left: 10px;
 }
-.news-post-text{
+
+.news-post-text {
     font-style: italic;
     border-left: solid 5px;
     color: black;
     padding-left: 10px;
 }
-.news-post-link{
+
+.news-post-link {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
