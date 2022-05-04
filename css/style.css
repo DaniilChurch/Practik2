@@ -1,34 +1,35 @@
-.block {
+.flex-container {
+ padding: 20px;
+    background-color: lightgray;
+    display: flex;
+justify-content: space-around}
+
+.flex-el {
     width: 100px;
     height: 100px;
-    margin: 10px;
-    background-color: black;
-    color: white;
+    color: black;
     text-align: center;
-    font-size: 20px;
-}
-.pos-relative{
-    position: relative;
-    top: 20px;
-    left: 30px;
-}
-.pos-absolute{
-    position: absolute;
-    right: 100px;
-    top: 100px;
-}
-.absolut-container{
-    width: 500px;
-    height: 500px;
-    padding: 50px;
-    background-color: green;
-    position: relative;
-    right: 20px;
-    top: 500px;
+    font-size: 24px;
 }
 
-.pos-fixed{
-    position: fixed;
-    top: 0px;
-    right: 0px;
+.bg-blue {
+    background-color: blue;
+    flex-direction: row;
+}
+
+.bg-orange {
+    background-color: orange;
+    text-align: center;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.bg-violet {
+    background-color: violet;
 }
