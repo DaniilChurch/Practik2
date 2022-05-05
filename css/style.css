@@ -1,35 +1,62 @@
-.flex-container {
- padding: 20px;
-    background-color: lightgray;
-    display: flex;
-justify-content: space-around}
+* {
+    margin: 0;
+    padding: 0;
+}
 
-.flex-el {
-    width: 100px;
-    height: 100px;
+body {
     color: black;
-    text-align: center;
-    font-size: 24px;
+    font: 400 14px/1 'Roboto', sans-serif;
 }
 
-.bg-blue {
-    background-color: blue;
-    flex-direction: row;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.bg-orange {
-    background-color: orange;
-    text-align: center;
+ul {
+    list-style: none;
 }
 
-.bg-green {
-    background-color: green;
+img {
+    max-width: 100%;
 }
 
-.bg-pink {
-    background-color: pink;
+/* Default classes start */
+.d-flex {
+    display: flex;
 }
 
-.bg-violet {
-    background-color: violet;
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Default classes end */
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+#header {
+    padding: 20px 0;
+    border-bottom: 2px solid lightgreen;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-nav a + a {
+    margin-left: 30px;
+}
+
+.header-nav a:hover{
+    color: lightgreen;
 }
