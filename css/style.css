@@ -1,4 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font: 400 14px/1 'PT Sans', sans-serif;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1114px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.header {
+    background-color: black;
+    padding: 40px 0;
+}
+
+.main-header-nav {
+    color: white;
+    font-weight: 700;
+    margin-left: 66px;
+}
+
+.main-header-nav a+a,
+.info-header-nav a+a {
+    margin-left: 30px;
+}
+
+.info-header-nav{
+    color: rgba(255,255,255,0.8) ;
+    margin-left: auto;
 }
