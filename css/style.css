@@ -2,9 +2,14 @@
     box-sizing: border-box;
 }
 
+html, body, main {
+    height: 100%;
+}
+
 body {
     font: 400 14px/1 'PT Sans', sans-serif;
     margin: 0;
+    height: 100%;
 }
 
 a {
@@ -55,7 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .btn-default {
     background-color: #fff;
-    box-shadow: 0px 4px 20px #0F064C;
+    box-shadow: 0 4px 20px #0F064C;
     color: #0F064C;
 }
 
@@ -84,10 +89,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .inner {
-    height: 100vh;
-    min-height: 910px;
     background: linear-gradient(89.79deg, #23196F 0.13%, #180D5B 99.88%);
     padding-top: 106px;
+    min-height: 100%;
 }
 
 .inner-call-to-action {
@@ -144,11 +148,11 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-left: 15px;
 }
 
-.inner-servises-wrap {
+.inner-service-wrap {
     margin-top: 90px;
 }
 
-.inner-services-title {
+.inner-service-title {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.29;
@@ -167,3 +171,8 @@ p, h1, h2, h3, h4, h5, h6 {
 .inner-service-list-item:hover {
     background-color: white;
 }
+
+.inner-service-list{
+    padding: 20px 0 40px 0;
+}
+
