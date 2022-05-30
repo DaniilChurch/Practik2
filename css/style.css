@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-    background-color: aliceblue;
+    background-color: white;
     border-bottom: 2px solid black;
 }
 
@@ -48,17 +48,17 @@ body {
 }
 
 .cart {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 20px 50px 20px ;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto ;
 
 }
 
 .car {
     border: 2px solid black;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .cart-content {
