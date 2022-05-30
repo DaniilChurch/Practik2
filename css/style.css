@@ -30,6 +30,8 @@ body {
     cursor: pointer;
 }
 .title-second {
+    text-transform: uppercase;
+    font-weight: bold;
     text-align:right;
     text-decoration: none;
     color: darkred;
