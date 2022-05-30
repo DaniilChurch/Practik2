@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-body {
-
-}
 
 .header {
     background-color: white;
@@ -29,13 +26,14 @@ body {
     color: darkred;
     cursor: pointer;
 }
+
 .title-second {
     text-transform: uppercase;
     font-weight: bold;
-    text-align:right;
+    text-align: right;
     text-decoration: none;
     color: darkred;
-    margin:70px 5px 0;
+    margin: 70px 5px 0;
 }
 
 .content {
@@ -50,11 +48,11 @@ body {
 }
 
 .cart {
-    margin: 50px 20px 50px 20px ;
+    margin: 50px 20px 50px 20px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto ;
+    grid-template-rows: auto auto auto;
 
 }
 
