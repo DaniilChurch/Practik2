@@ -1,124 +1,85 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-
-    <title>Number guessing game</title>
-
-    <style>
-        html {
-            font-family: sans-serif;
-        }
-
-        body {
-            width: 50%;
-            max-width: 800px;
-            min-width: 480px;
-            margin: 0 auto;
-        }
-
-        .lastResult {
-            color: white;
-            padding: 3px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fakti.ru</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<h1>Number guessing game</h1>
-
-<p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if
-    your guess was too high or too low.</p>
-
-<div class="form">
-    <label for="guessField">Enter a guess: </label>
-    <input type="text" id="guessField" class="guessField">
-    <input type="submit" value="Submit guess" class="guessSubmit">
+<div class="header">
+    <div class="header_content">
+        <img class="logo" src="img/logo.png" alt="logo">
+        <h1 class="title">Fackti.ru</h1>
+        <a class="title-second" href="#">О нас</a>
+    </div>
+    <!-- /.header_content -->
 </div>
-
-<div class="resultParas">
-    <p class="guesses"></p>
-    <p class="lastResult"></p>
-    <p class="lowOrHi"></p>
+<div class="content">
+    <h1 class="HeadTitle">Топ невероятно бесполезных фактов</h1>
+    <div class="cart">
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №1</h3>
+                <p class="fact">многие французские гувернёры сначала пытались работать парикмахерами, поварами или
+                    лакеями, но меняли планы, потому что учителя у дворян получали больше</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №2</h3>
+                <p class="fact">Дети учились 12-18 часов. За проступки в школе их наказывали физически: били тяжёлой
+                    линейкой по пальцам или ставили зажимы на уши</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №3</h3>
+                <p class="fact">лишь 5% населения Европы умели читать и писать</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №4</h3>
+                <p class="fact">Чтобы убедить молодёжь вести себя достойно, учителя заставляли рабов напиваться и
+                    творить непотребства на публике</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №5</h3>
+                <p class="fact">— «Happy Birthday To You» — находится под защитой авторских прав</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №6</h3>
+                <p class="fact">кукол Барби больше, чем канадцев в Канаде</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №7</h3>
+                <p class="fact">мужчина, принимая присягу или давая клятву, клал руку на мошонку</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №8</h3>
+                <p class="fact">в жаркую погоду нектар может забродить, а пчелы — хорошенько напиться. «Пьяных» пчел
+                    обратно в улей не пускают</p>
+            </div>
+        </div>
+        <div class="car">
+            <div class="cart-content">
+                <h3>Невероятно бесполезный факт №9</h3>
+                <p class="fact">покупателем взрывчатых веществ № 1 в мире являются военные США. № 2 — Дисней.</p>
+            </div>
+        </div>
+    </div>
 </div>
-
-<script>
-    var randomNumber = Math.floor(Math.random() * 100) + 1;
-
-    var guesses = document.querySelector('.guesses');
-    var lastResult = document.querySelector('.lastResult');
-    var lowOrHi = document.querySelector('.lowOrHi');
-
-    var guessSubmit = document.querySelector('.guessSubmit');
-    var guessField = document.querySelector('.guessField');
-
-    var guessCount = 1;
-    var resetButton;
-
-    guessField.focus();
-
-    function checkGuess() {
-        var userGuess = Number(guessField.value);
-        if (guessCount === 1) {
-            guesses.textContent = 'Previous guesses: ';
-        }
-        guesses.textContent += userGuess + ' ';
-
-        if (userGuess === randomNumber) {
-            lastResult.textContent = 'Congratulations! You got it right!';
-            lastResult.style.backgroundColor = 'green';
-            lowOrHi.textContent = '';
-            setGameOver();
-        } else if (guessCount === 10) {
-            lastResult.textContent = '!!!GAME OVER!!!';
-            setGameOver();
-        } else {
-            lastResult.textContent = 'Wrong!';
-            lastResult.style.backgroundColor = 'red';
-            if(userGuess < randomNumber) {
-                lowOrHi.textContent = 'Last guess was too low!';
-            } else if(userGuess > randomNumber) {
-                lowOrHi.textContent = 'Last guess was too high!';
-            }
-        }
-
-        guessCount++;
-        guessField.value = '';
-        guessField.focus();
-    }
-
-    guessSubmit.addEventListener('click', checkGuess);
-
-    function setGameOver() {
-        guessField.disabled = true;
-        guessSubmit.disabled = true;
-        resetButton = document.createElement('button');
-        resetButton.textContent = 'Start new game';
-        document.body.appendChild(resetButton);
-        resetButton.addEventListener('click', resetGame);
-    }
-
-    function resetGame() {
-        guessCount = 1;
-
-        var resetParas = document.querySelectorAll('.resultParas p');
-        for (var i = 0 ; i < resetParas.length ; i++) {
-            resetParas[i].textContent = '';
-        }
-
-        resetButton.parentNode.removeChild(resetButton);
-
-        guessField.disabled = false;
-        guessSubmit.disabled = false;
-        guessField.value = '';
-        guessField.focus();
-
-        lastResult.style.backgroundColor = 'white';
-
-        randomNumber = Math.floor(Math.random() * 100) + 1;
-    }
-
-
-</script>
+<!-- /.content -->
 </body>
 </html>
