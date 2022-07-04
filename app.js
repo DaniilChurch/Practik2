@@ -1,3 +1,4 @@
+// Основы
 // // 1 Переменные
 // const name = 'Даниил'
 // //const lastName = 'Горобцов'
@@ -69,7 +70,7 @@
 //     console.log('Где печеньки?:(')
 // }
 
-const isReady = true
+// const isReady = true
 //
 // if (isReady === true) {
 //     console.log('Все готово!')
@@ -78,7 +79,7 @@ const isReady = true
 // }
 
 // Тенарное выражение
-isReady ? console.log('Все готово!') : console.log('Все не готово!')
+// isReady ? console.log('Все готово!') : console.log('Все не готово!')
 
 // const num1 = 42
 // const num2 = '42'
@@ -88,10 +89,72 @@ isReady ? console.log('Все готово!') : console.log('Все не гот�
 // 7 Булевая логика
 
 // 8 Функции
+//  function calculateAge (year) {
+//     return 2022 - year
+//  }
+//
+// // console.log(calculateAge(2007))
+// // console.log(calculateAge(2008))
+// // console.log(calculateAge(2009))
+//
+// function logInfoAbout (name, year) {
+//     const age = calculateAge(year)
+//
+//     if (age > 0) {
+//         console.log('Человек по имени ' + name + 'сейчас имеет возраст ' + age)
+//     } else {
+//         console.log('Введен некоректный год рождения')
+//     }
+//
+// }
+//
+// logInfoAbout('Даниил ',2007)
 
+// 9 Массивы
+// const cars = ['Мазда','Мерседес','Форд'] // Так правельнее
+// const cars = new Array('Мазда', 'Мерседес', 'Форд')
+// console.log(cars.length)
+// console.log(cars[0])
+// console.log(cars[1])
+// console.log(cars[2])
+//
+// cars[0] = 'Porsh'
+// cars[3] = 'Мазда'
+// console.log(cars)
+// console.log(cars.length)
 
+// 10 Циклы
+// const cars = ['Мазда','Мерседес','Форд']
 
+// for (let i = 0; i < cars.length; i++) {
+//     const car = cars[i]
+//     console.log(car)
+// }
 
+// for (let car of cars) {
+//     console.log(car)
+// }
+
+// 11 Объекты
+const person = {
+    firstName: 'Даниил',
+    lastName: 'Горобцов',
+    year: 2007,
+    languages: ['Ru','En','Ua'],
+    hasWife: false,
+    greet: function () {
+        console.log('greet from person')
+    }
+}
+
+console.log(person.firstName)
+console.log(person['LastName'])
+const key = 'year'
+console.log(person[key])
+person.hasWife = true
+person.isProgrammer = true
+console.log(person)
+person.greet()
 
 
 
