@@ -1,4 +1,4 @@
-// Number
+// 1 Number
 // const numInteger = 42
 // const numFloat = 42.42
 // const pow = 10e3
@@ -37,13 +37,32 @@
 // console.log(+(0.4 + 0.2).toFixed(1))
 // console.log(parseFloat((0.4 + 0.2).toFixed(1)))
 
-// BigInt
+// 2 BigInt
 // console.log(90071992547409919999999n - 9007199254740991999999n)
 // console.log(-90071992547409919999999n)
 // console.log(9007199254740991999.9999n) // error
 
 // console.log(10n - 4) // error
-console.log(parseInt(10n) - 4 )
-console.log(10n - BigInt(4))
-console.log(5n / 2n)
+// console.log(parseInt(10n) - 4 )
+// console.log(10n - BigInt(4))
+// console.log(5n / 2n)
 
+// 3 Math
+// console.log(Math.E) //Константа
+// console.log(Math.PI) // Константа
+// console.log(Math.sqrt(25)) // Квадрат
+// console.log(Math.pow(5, 3)) // Возведение в степень
+// console.log(Math.abs(-42)) // 42
+// console.log(Math.max(42, 12, 23, 422)) // Большее число
+// console.log(Math.floor(4.9)) // Округление в меньшую сторону
+// console.log(Math.ceil(4.9)) // Округление в большую сторону
+// console.log(Math.round(4.9)) // Округление к ближайшему целому
+// console.log(Math.trunc(4.9)) // Возврашает целую часть числа
+// console.log(Math.random()) // Рандом от 0 - 1
+
+// 4 Example
+function getRandomBetween(min, max) {
+    return Math.round(Math.random() * (max - min) + min)
+}
+
+console.log(getRandomBetween(1, 100))
