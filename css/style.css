@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    min-height: 548px;
+    overflow: scroll;
+    background-image: url('/img/back.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+}
+
+body {
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+hr {
+    height: 10px;
+    background-color: brown;
+    margin-inline-start: 15px;
+    margin-inline-end: 15px;
+}
+
+p {
+    font-size: 100px;
+}
