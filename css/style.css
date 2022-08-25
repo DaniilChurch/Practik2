@@ -4,32 +4,48 @@
 }
 
 html {
-    padding: 10px;
-    height: 100%;
+    padding: 20px;
+    height: auto;
     width: 100%;
     min-height: 548px;
-    overflow: scroll;
+    overflow: inherit;
     background-image: url('/img/back.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-
 }
 
 body {
     justify-content: center;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
 }
 
 hr {
     height: 10px;
     background-color: brown;
-    margin-inline-start: 15px;
-    margin-inline-end: 15px;
 }
 
-p {
-    font-size: 100px;
+.content {
+    margin-left: 15px;
+    display: grid;
+    grid-template-rows: auto;
 }
+
+.Dossier {
+}
+
+.name {
+    font-size: 100px;
+    font-family: 'Comic Neue', cursive , sans-serif;
+}
+
+.Girl{
+    margin-top: 15px;
+    border: 2px solid brown;
+}
+ p {
+     font-size: 100px;
+     font-family: 'Comic Neue', cursive , sans-serif;
+ }
