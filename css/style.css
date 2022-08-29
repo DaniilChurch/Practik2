@@ -50,9 +50,17 @@ hr {
  }
 
  .basement {
-     background-color: lightsalmon;
+     margin: 10px;
+     justify-content: center;
      display: grid;
-     grid-gap: 20px;
-     grid-template-rows: 200px;
-     grid-auto-columns: 200px 200px 200px 200px;
+     grid-template-columns: repeat(4, minmax(150px, 350px));
+     justify-items: center;
+ }
+
+ .block {
+     cursor: pointer;
+     font-size: 150px;
+     background-color: lightsalmon;
+     width: 200px;
+     height: 200px;
  }
