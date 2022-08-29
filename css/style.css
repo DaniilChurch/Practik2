@@ -33,19 +33,26 @@ hr {
     grid-template-rows: auto;
 }
 
-.Dossier {
-}
-
 .name {
     font-size: 100px;
     font-family: 'Comic Neue', cursive , sans-serif;
 }
 
-.Girl{
+.Pchel {
     margin-top: 15px;
     border: 2px solid brown;
 }
+
  p {
+     max-width: 1281px;
      font-size: 100px;
      font-family: 'Comic Neue', cursive , sans-serif;
+ }
+
+ .basement {
+     background-color: lightsalmon;
+     display: grid;
+     grid-gap: 20px;
+     grid-template-rows: 200px;
+     grid-auto-columns: 200px 200px 200px 200px;
  }
